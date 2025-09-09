@@ -15,11 +15,11 @@ const companies = [
 
 export default function Slider() {
   return (
-    <div className="relative overflow-hidden bg-black py-6 px-4 sm:py-8 sm:px-10">
+    <div className="relative overflow-hidden bg-white py-6 px-4 sm:py-8 sm:px-10 border-t border-red-200 border-b border-red-200">
       <div className="flex flex-col sm:flex-row items-center sm:space-x-6 space-y-4 sm:space-y-0">
         
         <div className="flex-shrink-0 text-center sm:text-left sm:border-r sm:pr-6">
-          <h1 className="text-gray-50 text-lg sm:text-3xl font-medium">
+          <h1 className="text-red-600 text-lg sm:text-3xl font-medium">
             Innovating with  <br className="hidden sm:block" /> Global Brands
           </h1>
         </div>

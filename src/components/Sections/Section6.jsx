@@ -2,11 +2,11 @@
 
 const Section6 = () => {
   return (
-    <div className="bg-black text-white py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white text-gray-800 py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-12 lg:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent">
             The core values and<br />
             principles that drive us
           </h2>
@@ -20,10 +20,10 @@ const Section6 = () => {
               <img src="/Handshake.png" alt="Logo" className="" />
               </div>
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6">
+            <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-red-600">
               Long-term<br />commitment
             </h3>
-            <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
               25+ years of running a profitable organization gives us a good sense of challenges that a 
               growing business faces. We take pride in running a sustainable business that's powered by you, 
               our customer.
@@ -36,10 +36,10 @@ const Section6 = () => {
               <img src="/Target.png" alt="Logo" className="" />
               </div>
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6">
+            <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-red-600">
               Focus on research &<br />development
             </h3>
-            <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
               Software is our craft and we back it up with our relentless investments in R&D. So much so 
               that we prefer to own the entire technology stack, including running our data centers globally.
             </p>
@@ -51,10 +51,10 @@ const Section6 = () => {
               <img src="/Users.png" alt="Logo" className="" />
               </div>
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6">
+            <h3 className="text-xl lg:text-2xl font-semibold mb-4 lg:mb-6 text-red-600">
               Customer-first<br />philosophy
             </h3>
-            <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
+            <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
               In all these years, it's our customers' trust and goodwill that has helped us establish a strong 
               position in the market. No matter the size of your business, we're here to help you grow.
             </p>

@@ -1,146 +1,191 @@
-import React from 'react';
-import Button from '../Common/Button';
+"use client";
+import React, { useState, useEffect } from "react";
 
 const Section1 = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  const slides = [
+    {
+      id: 1,
+      image:
+        "https://i.pinimg.com/736x/7a/47/cf/7a47cf31a8dc802771263a917f15fe1d.jpg",
+      title: "AIR FREIGHT",
+      description:
+        "Fast and reliable air cargo solutions for your urgent shipments worldwide.",
+      icon: "✈️",
+    },
+    {
+      id: 2,
+      image:
+        "https://i.pinimg.com/736x/42/9b/88/429b8834df42ed7d678277dd9b3a97a6.jpg",
+      title: "SEA FREIGHT",
+      description:
+        "Cost-effective international shipping with complete tracking and support.",
+      icon: "🚢",
+    },
+    {
+      id: 3,
+      image:
+        "https://i.pinimg.com/1200x/0c/6c/0e/0c6c0ea6c5daa70eb54301a679cb3bca.jpg",
+      title: "CUSTOM CLEARANCE",
+      description:
+        "Seamless customs handling for quick, hassle-free international deliveries.",
+      icon: "📦",
+    },
+    {
+      id: 4,
+      image:
+        "https://i.pinimg.com/736x/46/7f/d4/467fd489422e345c357387cb068a9f14.jpg",
+      title: "INTERNATIONAL TRANSPORTATION",
+      description:
+        "Worldwide transportation services to connect your business globally.",
+      icon: "🌍",
+    },
+    {
+      id: 5,
+      image:
+        "https://i.pinimg.com/736x/41/94/c4/4194c429396a3c7a7747ea65591933ed.jpg",
+      title: "DOOR TO DOOR SERVICES",
+      description:
+        "End-to-end delivery service right from your location to the destination.",
+      icon: "🏠",
+    },
+  ];
+
+  useEffect(() => {
+    if (isAutoPlaying) {
+      const interval = setInterval(() => {
+        setActiveSlide((prev) => (prev + 1) % slides.length);
+      }, 4000);
+      return () => clearInterval(interval);
+    }
+  }, [isAutoPlaying, slides.length]);
+
+  const handleBoxClick = (index) => {
+    setActiveSlide(index);
+    setIsAutoPlaying(false);
+    setTimeout(() => setIsAutoPlaying(true), 8000);
+  };
+
   return (
+    <div className="relative w-full mt-[5rem] h-screen overflow-hidden bg-gradient-to-br from-red-50 to-white">
+      {/* Background Images */}
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              index === activeSlide
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-110"
+            }`}
+          >
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+          </div>
+        ))}
+      </div>
 
-    <div className="relative w-full overflow-hidden bg-black top-[5rem]">
+      {/* Floating Content Boxes */}
+      <div className="absolute inset-0 flex items-center justify-center p-4 md:p-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 max-w-7xl mx-auto">
+          {slides.map((slide, index) => (
+            <div
+              key={slide.id}
+              onClick={() => handleBoxClick(index)}
+              className={`group cursor-pointer transition-all duration-500 ${
+                index === activeSlide ? "scale-105 z-20" : "scale-100 z-10"
+              }`}
+            >
+              <div
+                className={`relative w-full h-48 sm:h-56 lg:h-64 p-6 rounded-2xl backdrop-blur-md shadow-2xl border flex flex-col items-center justify-center text-center transition-all duration-500 ${
+                  index === activeSlide
+                    ? "bg-red-600 text-white border-red-400 shadow-red-500/30"
+                    : "bg-white/90 hover:bg-white text-gray-800 border-white/50 hover:border-red-200"
+                }`}
+              >
+                {/* Glowing effect for active box */}
+                {index === activeSlide && (
+                  <div className="absolute inset-0 rounded-2xl bg-red-500/20 animate-pulse"></div>
+                )}
 
-      <img src="/Frame1.png" alt="Globe" className="absolute inset-0 w-full object-cover" />
-
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
-
-        <div className="text-center mb-8 sm:mb-12 w-[90vw] sm:w-[80vw] md:w-[60vw] lg:w-[40vw] mt-[5vh] sm:mt-[10vh] mx-auto">
-          <h1 className="text-[6vw] sm:text-[4vw] md:text-[3vw] lg:text-[2vw] xl:text-[3vw] font-bold text-white leading-tight mb-2">
-            Your life's work,<br /> powered by our life's work
-          </h1>
+                {/* Content */}
+                <div className="relative z-10">
+                  <div className="text-3xl mb-3">{slide.icon}</div>
+                  <h3
+                    className={`text-sm md:text-lg font-bold mb-2 transition-colors duration-300 ${
+                      index === activeSlide
+                        ? "text-white"
+                        : "text-gray-800 group-hover:text-red-600"
+                    }`}
+                  >
+                    {slide.title}
+                  </h3>
+                  <p
+                    className={`text-xs md:text-sm leading-relaxed transition-colors duration-300 ${
+                      index === activeSlide
+                        ? "text-red-100"
+                        : "text-gray-600 group-hover:text-gray-700"
+                    }`}
+                  >
+                    {slide.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+      </div>
 
-        <div className="bg-black bg-opacity-80 rounded-3xl p-8 sm:p-12 lg:p-16 max-w-5xl w-full mx-auto backdrop-blur-sm">
+      {/* Navigation Dots */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-30">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => handleBoxClick(index)}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              index === activeSlide
+                ? "bg-red-600 scale-125 shadow-lg shadow-red-600/50"
+                : "bg-white/70 hover:bg-white hover:scale-110"
+            }`}
+          />
+        ))}
+      </div>
 
-          <div className="flex justify-center mb-8">
-            <img src="/Logo.png" alt="Logo" className="h-[10vh] w-[30vw] sm:h-20 sm:w-30" />
+      {/* Auto-play indicator */}
+      <div className="absolute top-8 right-8 z-30">
+        <div
+          className={`px-4 py-2 rounded-full backdrop-blur-md border transition-colors duration-300 ${
+            isAutoPlaying
+              ? "bg-red-600/90 text-white border-red-400"
+              : "bg-white/90 text-gray-800 border-white/50"
+          }`}
+        >
+          <div className="flex items-center space-x-2 text-sm font-medium">
+            <div
+              className={`w-2 h-2 rounded-full ${
+                isAutoPlaying ? "bg-white animate-pulse" : "bg-gray-400"
+              }`}
+            ></div>
+            <span>{isAutoPlaying ? "Auto" : "Manual"}</span>
           </div>
+        </div>
+      </div>
 
-          <div className="text-center mb-8 sm:mb-12">
-            <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed mb-4 max-w-3xl mx-auto">
-              A unique and powerful software suite to transform the way you work.
-              Designed for businesses of all sizes, built by a company that values your privacy.
-            </p>
-          </div>
-
-          <div className="flex justify-center mb-12 sm:mb-16">
-             <Button 
-                label="Get Started For Free " 
-              />
-          </div>
-
-          <div className="w-full">
-            <h3 className="text-lg sm:text-xl lg:text-2xl text-gray-300 text-center mb-8 sm:mb-12 font-medium">
-              Featured Apps
-            </h3>
-
-            <div className="flex flex-wrap justify-center gap-8 sm:gap-12 lg:gap-16 mb-8 sm:mb-12">
-
-              <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-emerald-300 transition-colors duration-300">
-                  Payroll
-                </span>
-              </div>
-
-              <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-purple-500/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-purple-300 transition-colors duration-300">
-                  Performance
-                </span>
-              </div>
-
-              <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-blue-500/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-blue-300 transition-colors duration-300">
-                  Carrers
-                </span>
-              </div>
-
-              <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-orange-500/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-orange-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-orange-500 to-red-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-orange-300 transition-colors duration-300">
-                  Modern HR
-                </span>
-              </div>
-
-              <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-pink-500/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-pink-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-pink-500 to-rose-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-pink-300 transition-colors duration-300">
-                  Attendance
-                </span>
-              </div>
-
-               <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-gray-200/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-orange-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-gray-500 to-white-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-gray-400 transition-colors duration-300">
-                  Hiring & Onboarding
-                </span>
-              </div>
-
-               <div className="flex flex-col items-center text-center group cursor-pointer bg-gradient-to-br from-gray-900 via-black to-gray-800 gap-3 sm:gap-4 p-4 sm:p-6 md:p-8 w-24 h-28 sm:w-32 sm:h-36 md:w-36 md:h-40 rounded-2xl sm:rounded-3xl border border-gray-700/30 hover:border-yellow-300/50 transition-all duration-500 hover:shadow-xl sm:hover:shadow-2xl hover:shadow-purple-500/20 hover:-translate-y-1 sm:hover:-translate-y-2 backdrop-blur-sm">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 p-1.5 sm:p-2 bg-gradient-to-r from-yellow-500 to-gray-600 rounded-xl sm:rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                  <img
-                    src="/Producticon.png"
-                    alt="Logo"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium sm:font-semibold group-hover:text-yellow-500 transition-colors duration-300">
-                  Project Timesheet
-                </span>
-              </div>
-
-            </div>
-
-            <div className="text-center">
-              <Button 
-                label="Explore all products" 
-              />
-            </div>
-          </div>
+      {/* Mobile Overlay */}
+      <div className="absolute bottom-20 left-4 right-4 md:hidden z-20">
+        <div className="bg-black/80 backdrop-blur-md rounded-xl p-4 text-center">
+          <h2 className="text-white text-lg font-bold mb-2">
+            {slides[activeSlide].title}
+          </h2>
+          <p className="text-gray-200 text-sm">
+            {slides[activeSlide].description}
+          </p>
         </div>
       </div>
     </div>

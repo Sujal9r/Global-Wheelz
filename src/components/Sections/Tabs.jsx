@@ -60,27 +60,27 @@ const Tabs = () => {
   ];
 
   return (
-    <div className="w-full bg-gradient-to-br from-black via-gray-900 to-black py-16 sm:py-20 relative overflow-hidden">
+    <div className="w-full bg-gradient-to-br from-white to-red-50 py-16 sm:py-20 relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-red-500 to-red-600 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-red-400 to-red-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/3 w-72 h-72 bg-gradient-to-r from-red-600 to-red-700 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent">
               Everything you need to create a
             </span>
             <br />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent">
               high performance culture
             </span>
           </h1>
 
           <div className="flex justify-center">
-            <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-red-600 rounded-full"></div>
           </div>
         </div>
 
@@ -88,7 +88,7 @@ const Tabs = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-br from-gray-900/80 to-gray-800/80 backdrop-blur-sm p-8 rounded-3xl border border-gray-700/50 hover:border-gray-600/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl"
+              className="group relative bg-gradient-to-br from-white/80 to-red-50/80 backdrop-blur-sm p-8 rounded-3xl border border-red-200/50 hover:border-red-300/50 transition-all duration-700 hover:scale-105 hover:shadow-2xl"
             >
               <div
                 className={`absolute inset-0 bg-gradient-to-r ${feature.bgGradient} rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-700 blur-xl`}
@@ -97,7 +97,7 @@ const Tabs = () => {
               <div
                 className={`absolute inset-0 bg-gradient-to-r ${feature.gradient} rounded-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 p-[1px]`}
               >
-                <div className="w-full h-full bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl"></div>
+                <div className="w-full h-full bg-gradient-to-br from-white to-red-50 rounded-3xl"></div>
               </div>
 
               <div className="relative z-10 space-y-6">
@@ -107,11 +107,11 @@ const Tabs = () => {
                   <span className="filter drop-shadow-sm">{feature.icon}</span>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-100 group-hover:text-white transition-colors duration-300">
+                <h3 className="text-xl font-bold text-red-600 group-hover:text-red-700 transition-colors duration-300">
                   {feature.title}
                 </h3>
 
-                <p className="text-gray-400 text-base leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                <p className="text-gray-600 text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                   {feature.description}
                 </p>
 

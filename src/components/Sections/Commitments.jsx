@@ -106,7 +106,7 @@ const Commitments = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-black text-white min-h-screen flex items-center px-4 py-12 md:py-16 lg:py-20"
+      className="bg-white text-gray-800 min-h-screen flex items-center px-4 py-12 md:py-16 lg:py-20"
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -114,10 +114,10 @@ const Commitments = () => {
           <div className="grid grid-cols-2 gap-6 md:gap-8 lg:gap-12">
             {statsData.map((stat) => (
               <div key={stat.key} className="text-left">
-                <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-2 md:mb-3">
+                <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-red-600 mb-2 md:mb-3">
                   {stat.value}{stat.suffix}
                 </div>
-                <div className="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed max-w-[200px]">
+                <div className="text-sm md:text-base lg:text-lg text-gray-600 leading-relaxed max-w-[200px]">
                   {stat.label}
                 </div>
               </div>
@@ -125,11 +125,11 @@ const Commitments = () => {
           </div>
 
           <div className="text-left lg:pl-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl leading-tight mb-6 md:mb-8">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl leading-tight mb-6 md:mb-8 text-red-600">
               Made In India. <br/>Made For The World.
             </h1>
             
-            <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-8 md:mb-10 leading-relaxed max-w-lg">
+            <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-8 md:mb-10 leading-relaxed max-w-lg">
               We are committed to working with you collaboratively to understand your goals and create a strategy that will achieve them.
             </p>
             <Button 
@@ -138,7 +138,7 @@ const Commitments = () => {
           </div>
         </div>
 
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-30"></div>
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-red-500 to-transparent opacity-30"></div>
       </div>
     </section>
   );

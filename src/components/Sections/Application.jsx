@@ -3,11 +3,11 @@ import React from "react";
 
 const Application = () => {
   return (
-    <div className="w-full bg-gradient-to-br from-black via-gray-900 to-black py-12 sm:py-16 relative overflow-hidden">
+    <div className="w-full bg-gradient-to-br from-white via-red-50 to-white py-12 sm:py-16 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-4 sm:px-6 md:px-12 relative z-10">
         <div className="flex justify-center order-1 md:order-none">
           <div className="relative group">
-            <div className="absolute inset-0 bg-gradient-to-b from-purple-600 via-black to-blue-600 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-700 scale-110"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-red-600 via-red-500 to-red-700 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-700 scale-110"></div>
               <img
                 src="/Phone.png"
                 alt="Keka Mobile App"
@@ -19,11 +19,11 @@ const Application = () => {
         <div className="text-left space-y-8">
           <div className="space-y-4">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
-              <span className="bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent">
                 One HR app, embraced by
               </span>
               <br />
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent font-extrabold animate-pulse">
+              <span className="bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent font-extrabold animate-pulse">
                 2.5 Million Employees
               </span>
             </h2>
@@ -70,14 +70,14 @@ const Application = () => {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="group relative bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-gray-600 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
+                className="group relative bg-gradient-to-br from-white to-red-50 p-6 rounded-2xl border border-red-200 hover:border-red-300 transition-all duration-500 hover:scale-105 hover:shadow-2xl"
               >
                 <div className="relative z-10 space-y-3">
-                  <h3 className="font-semibold text-gray-50 text-base sm:text-lg group-hover:text-white transition-colors duration-300">
+                  <h3 className="font-semibold text-red-600 text-base sm:text-lg group-hover:text-red-700 transition-colors duration-300">
                     {feature.title}
                   </h3>
 
-                  <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-300 transition-colors duration-300">
+                  <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                     {feature.description}
                   </p>
                 </div>

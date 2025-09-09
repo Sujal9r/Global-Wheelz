@@ -7,49 +7,49 @@ const Features = () => {
   const features = [
     {
       id: 0,
-      title: "People data & Analytics",
+      title: "Air Freight Services",
       description:
-        "Connect all your people together in one place and gain powerful insights",
+        "Fast and reliable air cargo solutions for urgent shipments worldwide with real-time tracking",
     },
     {
       id: 1,
-      title: "Payroll & Expense tracking",
+      title: "Sea Freight Services",
       description:
-        "Automate and Pay employees in 6 steps- like clockwork. Stay 100% Compliant.",
+        "Cost-effective ocean freight solutions for large volume shipments with comprehensive logistics support",
     },
     {
       id: 2,
-      title: "Performance and Culture",
+      title: "Custom Clearance",
       description:
-        "Employ SMART Goals and OKRs to measure & maximize talent performance.",
+        "Expert customs clearance services ensuring smooth border crossings and compliance with international regulations",
     },
     {
       id: 3,
-      title: "Hiring and Onboarding",
+      title: "International Transportation",
       description:
-        "Source, hire and onboard top talent. Personalized dashboards for insights.",
+        "Comprehensive transportation solutions connecting businesses across continents with seamless logistics",
     },
     {
       id: 4,
-      title: "Timesheets & Projects (PSA)",
+      title: "Door to Door Services",
       description:
-        "Manage time, resource and project profitability efficiently",
+        "Complete end-to-end delivery solutions from pickup to final destination with full visibility",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-black p-6 sm:p-10">
+    <div className="min-h-screen bg-white p-6 sm:p-10">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-          Smart HR to outsmart the changing world
+        <h1 className="text-3xl sm:text-4xl font-bold text-red-600 mb-4">
+          Global Logistics Solutions for International Success
         </h1>
-        <p className="text-base sm:text-lg text-gray-300 max-w-3xl mx-auto">
-          The world has changed, and it's going to keep changing. Global-Wheelz HR helps
-          your teams to adapt, evolve, and scale by working more effectively.
-          Spend less time on mundane tasks and focus more on strategy. Turn data
-          into smarter decisions and create experiences your employees will
-          love.
+        <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
+          The world of international trade is constantly evolving. Global Wheelz helps
+          your business navigate global markets with confidence and efficiency.
+          From air freight to sea freight, custom clearance to door-to-door delivery,
+          we provide comprehensive logistics solutions that connect your business
+          to the world.
         </p>
       </div>
 
@@ -62,20 +62,20 @@ const Features = () => {
               onClick={() => setActiveFeature(index)}
               className={`p-5 rounded-lg cursor-pointer transition-all duration-300 ${
                 activeFeature === index
-                  ? "bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white shadow-lg border-l-4 border-blue-800"
-                  : "bg-gray-900 hover:bg-gray-500 text-gray-800"
+                  ? "bg-gradient-to-r from-red-50 via-red-100 to-red-50 text-red-600 shadow-lg border-l-4 border-red-600"
+                  : "bg-white hover:bg-red-50 text-gray-700 border border-red-200"
               }`}
             >
               <h3
                 className={`text-lg sm:text-xl font-semibold mb-2 ${
-                  activeFeature === index ? "text-white" : "text-gray-50"
+                  activeFeature === index ? "text-red-600" : "text-gray-700"
                 }`}
               >
                 {feature.title}
               </h3>
               <p
                 className={`text-sm ${
-                  activeFeature === index ? "text-gray-200" : "text-gray-400"
+                  activeFeature === index ? "text-red-500" : "text-gray-600"
                 }`}
               >
                 {feature.description}
@@ -84,7 +84,7 @@ const Features = () => {
           ))}
         </div>
 
-        <div className="w-full lg:w-2/3 relative overflow-hidden rounded-lg bg-gray-900 shadow-lg">
+        <div className="w-full lg:w-2/3 relative overflow-hidden rounded-lg bg-white shadow-lg border border-red-200">
           <div
             className="flex transition-transform duration-500 ease-in-out h-full"
             style={{ transform: `translateX(-${activeFeature * 100}%)` }}
