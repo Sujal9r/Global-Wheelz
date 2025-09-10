@@ -4,7 +4,7 @@ import Button from "../Common/Button";
 
 const Section2 = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
+    <div className="relative bg-gradient-to-br from-white via-red-50 to-white overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[60%] bg-gradient-to-b from-red-100 to-transparent"></div>
       
       <div className="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-red-100 to-transparent"></div>
@@ -26,7 +26,7 @@ const Section2 = () => {
             </div>
             
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed max-w-lg text-gray-700">
-              Connect your business to global markets with Global Wheelz comprehensive international delivery services. From air freight to sea freight, custom clearance to door-to-door delivery, we provide seamless logistics solutions that break down barriers and expand your reach worldwide.
+              Connect your business to global markets with Global Wheels comprehensive international delivery services. From air freight to sea freight, custom clearance to door-to-door delivery, we provide seamless logistics solutions that break down barriers and expand your reach worldwide.
             </p>
             
             <Button 

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <img src="/Logo.png" alt="Global Wheelz Logo" className="h-[15rem]" />
+            <img src="/Logo.png" alt="Global Wheelz Logo" className="h-12 md:h-15 lg:h-18 w-auto object-contain" />
           </div>
           <p className="text-gray-600 max-w-4xl leading-relaxed">
             At <span className="font-semibold text-gray-800">Global Wheelz</span>, we deliver seamless, efficient, and secure international logistics 

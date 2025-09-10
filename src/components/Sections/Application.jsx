@@ -10,8 +10,8 @@ const Application = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-red-600 via-red-500 to-red-700 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-700 scale-110"></div>
               <img
                 src="/Phone.png"
-                alt="Keka Mobile App"
-                className="w-[220px] sm:w-[260px] md:w-[320px] drop-shadow-2xl transition-transform duration-300 hover:scale-105"
+                alt=" Mobile App"
+                className="w-[220px] rounded-lg sm:w-[260px] md:w-[320px] drop-shadow-2xl transition-transform duration-300 hover:scale-105"
               />
           </div>
         </div> 

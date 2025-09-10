@@ -90,7 +90,8 @@ const Navbar = () => {
             <img
               src="/Logo.png"
               alt="Logo"
-              className="h-32 md:h-40 lg:h-80 w-auto object-contain"
+              href="/"
+              className="h-12 md:h-15 lg:h-18 w-auto object-contain"
             />
 
             {/* Desktop Menu */}
