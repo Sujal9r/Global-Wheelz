@@ -9,7 +9,7 @@ const Section1 = () => {
     {
       id: 1,
       image:
-        "https://i.pinimg.com/736x/7a/47/cf/7a47cf31a8dc802771263a917f15fe1d.jpg",
+        "/Air.jpeg",
       title: "AIR FREIGHT",
       description:
         "Fast and reliable air cargo solutions for your urgent shipments worldwide.",
@@ -18,7 +18,7 @@ const Section1 = () => {
     {
       id: 2,
       image:
-        "https://i.pinimg.com/736x/42/9b/88/429b8834df42ed7d678277dd9b3a97a6.jpg",
+        "/Ship.jpg",
       title: "SEA FREIGHT",
       description:
         "Cost-effective international shipping with complete tracking and support.",
@@ -36,7 +36,7 @@ const Section1 = () => {
     {
       id: 4,
       image:
-        "https://i.pinimg.com/736x/46/7f/d4/467fd489422e345c357387cb068a9f14.jpg",
+        "/Transport.png",
       title: "INTERNATIONAL TRANSPORTATION",
       description:
         "Worldwide transportation services to connect your business globally.",
@@ -45,7 +45,7 @@ const Section1 = () => {
     {
       id: 5,
       image:
-        "https://i.pinimg.com/736x/41/94/c4/4194c429396a3c7a7747ea65591933ed.jpg",
+        "Door.png",
       title: "DOOR TO DOOR SERVICES",
       description:
         "End-to-end delivery service right from your location to the destination.",

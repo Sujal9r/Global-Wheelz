@@ -198,7 +198,7 @@ const Navbar = () => {
                                  hover:from-red-600 hover:to-red-700 transform hover:scale-105 
                                  transition-all duration-300 shadow-lg hover:shadow-red-500/30"
               >
-                <span className="relative z-10">Get Started</span>
+                <span className="relative z-10">Get Quote</span>
                 <div
                   className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent 
                                 transform -skew-x-12 -translate-x-full group-hover:translate-x-full 
@@ -313,7 +313,7 @@ const Navbar = () => {
             ))}
             <div className="pt-4">
               <button className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300">
-                Get Started
+                Get Quote
                 </button>
               </div>
             </div>

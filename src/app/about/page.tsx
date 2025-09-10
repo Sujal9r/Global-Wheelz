@@ -7,11 +7,11 @@ export default function About() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="pt-20 pb-16 bg-gradient-to-br from-white via-red-50 to-white">
+      <div className="pt-40 pb-16 bg-gradient-to-br from-white via-red-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent mb-6">
-              About Global Wheelz
+              About Global wheels
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your trusted partner in global logistics, delivering excellence across continents with precision and reliability.

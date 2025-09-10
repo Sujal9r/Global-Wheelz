@@ -7,10 +7,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <div className="flex items-center mb-6">
-            <img src="/Logo.png" alt="Global Wheelz Logo" className="h-12 md:h-15 lg:h-18 w-auto object-contain" />
+            <img src="/Logo.png" alt="Global wheels Logo" className="h-12 md:h-15 lg:h-18 w-auto object-contain" />
           </div>
           <p className="text-gray-600 max-w-4xl leading-relaxed">
-            At <span className="font-semibold text-gray-800">Global Wheelz</span>, we deliver seamless, efficient, and secure international logistics 
+            At <span className="font-semibold text-gray-800">Global wheels</span>, we deliver seamless, efficient, and secure international logistics 
             solutions. From freight forwarding to last-mile delivery, we ensure your cargo 
             reaches every corner of the globe on time, every time.
           </p>
@@ -137,7 +137,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="text-center text-gray-600 text-sm border-t border-red-200 p-4 bg-red-50">
-          © {new Date().getFullYear()} Global Wheelz. All Rights Reserved. | Driving Global Logistics Excellence
+          © {new Date().getFullYear()} Global wheels. All Rights Reserved. | Driving Global Logistics Excellence
         </div>
       </div>
     </footer>

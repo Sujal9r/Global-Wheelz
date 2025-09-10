@@ -4,10 +4,10 @@ import Button from "../Common/Button";
 
 const Commitments = () => {
   const targetNumbers = {
-    revenue: 245,
-    audience: 130,
-    brands: 50,
-    awards: 24,
+    revenue: 99,
+    audience: 150,
+    brands: 1000,
+    awards: 25,
   };
 
   const duration = 2000;
@@ -81,25 +81,25 @@ const Commitments = () => {
       key: 'revenue',
       value: counts.revenue,
       suffix: '%',
-      label: 'More revenues for the brand'
+      label: 'On-time delivery rate'
     },
     {
       key: 'audience',
       value: counts.audience,
-      suffix: 'K+',
-      label: 'Audiences reached'
+      suffix: '+',
+      label: 'Countries served'
     },
     {
       key: 'brands',
       value: counts.brands,
       suffix: '+',
-      label: 'Brands trust us'
+      label: 'Successful shipments'
     },
     {
       key: 'awards',
       value: counts.awards,
       suffix: '+',
-      label: 'Worldwide Awards'
+      label: 'Years of excellence'
     }
   ];
 
@@ -126,11 +126,11 @@ const Commitments = () => {
 
           <div className="text-left lg:pl-8">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-5xl leading-tight mb-6 md:mb-8 text-red-600">
-              Made In India. <br/>Made For The World.
+              Made In India. <br/>Delivering To The World.
             </h1>
             
             <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-8 md:mb-10 leading-relaxed max-w-lg">
-              We are committed to working with you collaboratively to understand your goals and create a strategy that will achieve them.
+              We are committed to providing seamless logistics solutions that connect your business to global markets with precision, reliability, and excellence.
             </p>
             <Button 
             label="Learn More"

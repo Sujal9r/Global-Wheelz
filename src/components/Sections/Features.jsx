@@ -45,11 +45,11 @@ const Features = () => {
           Global Logistics Solutions for International Success
         </h1>
         <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto">
-          The world of international trade is constantly evolving. Global Wheelz helps
+          The world of international trade is constantly evolving. Global wheels helps
           your business navigate global markets with confidence and efficiency.
           From air freight to sea freight, custom clearance to door-to-door delivery,
           we provide comprehensive logistics solutions that connect your business
-          to the world.
+          to the world with precision and reliability.
         </p>
       </div>
 
@@ -89,35 +89,35 @@ const Features = () => {
             className="flex transition-transform duration-500 ease-in-out h-full"
             style={{ transform: `translateX(-${activeFeature * 100}%)` }}
           >
-            <div className="w-full flex-shrink-0 p-6 flex justify-center">
+            <div className="w-full flex-shrink-0 flex justify-center">
               <img
                 src="https://www.patel-india.com/uploads/images/678bd185-cdef-4203-b419-88f8b83a5faf_air-logistics%20(2).jpg"
                 alt=""
               />
             </div>
 
-            <div className="w-full flex-shrink-0 p-6 flex justify-center">
+            <div className="w-full flex-shrink-0 flex justify-center">
               <img
                 src="https://www.bombinoexp.com/img/banner-img2.png"
                 alt=""
               />
             </div>
 
-            <div className="w-full flex-shrink-0 p-6 flex justify-center">
+            <div className="w-full flex-shrink-0 flex justify-center">
               <img
-                src="https://www.impexperts.com/blog/wp-content/uploads/2019/09/customs.jpg"
+                src="/Clear.png"
                 alt=""
               />
             </div>
 
-            <div className="w-full flex-shrink-0 p-6 flex justify-center">
+            <div className="w-full flex-shrink-0 flex justify-center">
               <img
-                src="https://www.impexperts.com/blog/wp-content/uploads/2019/09/customs.jpg"
+                src="/Transport.png"
                 alt=""
               />
             </div>
 
-            <div className="w-full flex-shrink-0 p-6 flex justify-center">
+            <div className="w-full flex-shrink-0 flex justify-center">
               <img
                 src="https://www.exportiamo.it/public/files//international-transport-1.jpg"
                 alt=""

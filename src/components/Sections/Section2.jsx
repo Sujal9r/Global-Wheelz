@@ -18,7 +18,7 @@ const Section2 = () => {
                 International Logistics
               </p>
               <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl leading-tight text-red-600">
-                Global Wheels
+                Global Wheelz
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 font-medium">
                 Your Gateway to Global Markets
@@ -26,7 +26,7 @@ const Section2 = () => {
             </div>
             
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed max-w-lg text-gray-700">
-              Connect your business to global markets with Global Wheels comprehensive international delivery services. From air freight to sea freight, custom clearance to door-to-door delivery, we provide seamless logistics solutions that break down barriers and expand your reach worldwide.
+              Connect your business to global markets with Global Wheelz comprehensive international logistics services. From air freight to sea freight, custom clearance to door-to-door delivery, we provide seamless logistics solutions that break down barriers and expand your reach worldwide.
             </p>
             
             <Button 
@@ -40,7 +40,7 @@ const Section2 = () => {
             <img src="https://wallpapers.com/images/featured/tyres-png-q9h2c4y9nd0gy6e4.jpg" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 border-red-300 rounded-full flex items-center justify-center animate-spin"/>            
             
             <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-light leading-relaxed text-gray-700">
-              "Whether you're a startup, mid-sized company, or enterprise —Global Wheelz delivers excellence for all."
+              "Whether you're a startup, mid-sized company, or enterprise —Global Wheelz delivers logistics excellence for all."
             </blockquote>
             
             {/* <div className="flex items-center space-x-3 sm:space-x-4 pt-2 sm:pt-4">

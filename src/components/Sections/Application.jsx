@@ -20,11 +20,11 @@ const Application = () => {
           <div className="space-y-4">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-snug">
               <span className="bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent">
-                One HR app, embraced by
+                One logistics platform, trusted by
               </span>
               <br />
               <span className="bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent font-extrabold animate-pulse">
-                2.5 Million Employees
+                10,000+ Businesses Worldwide
               </span>
             </h2>
           </div>
@@ -32,39 +32,39 @@ const Application = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
               {
-                title: "Simplified leave & attendance",
+                title: "Real-time Shipment Tracking",
                 description:
-                  "Let employees clock in or take leave remotely, on field, or in-office. Embrace self-accountability.",
+                  "Track your shipments in real-time with our advanced GPS and IoT-enabled tracking system.",
                 gradient: "from-emerald-500 to-teal-500",
               },
               {
-                title: "Tax and Expense - in 2 Clicks",
+                title: "Instant Quote Generation",
                 description:
-                  "Let employees manage tax declarations and proofs. File and update expenses in just 2 clicks.",
+                  "Get instant shipping quotes for air, sea, and land freight with transparent pricing.",
                 gradient: "from-blue-500 to-cyan-500",
               },
               {
-                title: "A Culture of Recognition",
+                title: "Digital Documentation",
                 description:
-                  "Give and receive praises to build a culture of recognition. Take a moment to soak it in.",
+                  "Manage all shipping documents digitally with automated customs and compliance handling.",
                 gradient: "from-purple-500 to-pink-500",
               },
               {
-                title: "Approvals from a single window",
+                title: "24/7 Customer Support",
                 description:
-                  "Enable managers to approve or reject requests from one place.",
+                  "Round-the-clock customer support with dedicated logistics experts for your business needs.",
                 gradient: "from-orange-500 to-red-500",
               },
               {
-                title: "Adaptable to employee preferences",
+                title: "Customized Logistics Solutions",
                 description:
-                  "Each employee can find their preferred features on the main screen.",
+                  "Tailored logistics solutions designed specifically for your industry and business requirements.",
                 gradient: "from-violet-500 to-purple-500",
               },
               {
-                title: "Faster resolution of employee issues",
+                title: "Global Network Access",
                 description:
-                  "A reliable help-desk with a super easy process for raising and resolving issues quickly.",
+                  "Access our extensive global network of partners and facilities for seamless worldwide shipping.",
                 gradient: "from-indigo-500 to-blue-500",
               },
             ].map((feature, index) => (

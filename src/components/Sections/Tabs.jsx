@@ -4,55 +4,55 @@ import React from "react";
 const Tabs = () => {
   const features = [
     {
-      icon: "💰",
-      title: "Payroll",
+      icon: "🚚",
+      title: "Freight Forwarding",
       description:
-        "We redefined Payroll industry back in 2016. 6 simple steps. No manual tasks— All on cloud.",
+        "Comprehensive freight forwarding solutions connecting businesses worldwide with seamless logistics.",
       gradient: "from-cyan-500 to-blue-500",
       bgGradient: "from-cyan-500/10 to-blue-500/10",
       hoverGradient: "from-cyan-600 to-blue-600",
     },
     {
-      icon: "👤",
-      title: "Modern HR",
+      icon: "🌍",
+      title: "Global Network",
       description:
-        "All your people information in one place to create a connected digital workplace.",
+        "Extensive worldwide network ensuring your cargo reaches every corner of the globe efficiently.",
       gradient: "from-emerald-500 to-green-500",
       bgGradient: "from-emerald-500/10 to-green-500/10",
       hoverGradient: "from-emerald-600 to-green-600",
     },
     {
-      icon: "💖",
-      title: "Performance",
+      icon: "📦",
+      title: "Warehousing",
       description:
-        "Build a high-performing culture driven by contextual feedback and goal alignment.",
+        "State-of-the-art warehousing facilities with advanced inventory management and security systems.",
       gradient: "from-pink-500 to-rose-500",
       bgGradient: "from-pink-500/10 to-rose-500/10",
       hoverGradient: "from-pink-600 to-rose-600",
     },
     {
-      icon: "👥",
-      title: "Hiring & Onboarding",
+      icon: "📋",
+      title: "Custom Clearance",
       description:
-        "Empower your recruiter to discover, hire, and onboard the best talent.",
+        "Expert customs clearance services ensuring smooth border crossings and regulatory compliance.",
       gradient: "from-orange-500 to-amber-500",
       bgGradient: "from-orange-500/10 to-amber-500/10",
       hoverGradient: "from-orange-600 to-amber-600",
     },
     {
       icon: "📊",
-      title: "Project timesheet",
+      title: "Supply Chain Management",
       description:
-        "Track your employee time and maintain effective utilization to grow your services business.",
+        "End-to-end supply chain solutions optimizing your logistics operations for maximum efficiency.",
       gradient: "from-indigo-500 to-purple-500",
       bgGradient: "from-indigo-500/10 to-purple-500/10",
       hoverGradient: "from-indigo-600 to-purple-600",
     },
     {
-      icon: "⏰",
-      title: "Time & Attendance",
+      icon: "⚡",
+      title: "Express Delivery",
       description:
-        "Automated Attendance and leave — unified with payroll. Biometric and GPS Tracking.",
+        "Fast and reliable express delivery services with real-time tracking and guaranteed delivery times.",
       gradient: "from-yellow-500 to-orange-500",
       bgGradient: "from-yellow-500/10 to-orange-500/10",
       hoverGradient: "from-yellow-600 to-orange-600",
@@ -71,11 +71,11 @@ const Tabs = () => {
         <div className="text-center mb-16">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent">
-              Everything you need to create a
+              Everything you need for
             </span>
             <br />
             <span className="bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent">
-              high performance culture
+              global logistics excellence
             </span>
           </h1>
 

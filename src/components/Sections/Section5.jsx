@@ -28,14 +28,14 @@ const Section5 = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-[300px] sm:h-[400px] lg:h-[500px]"
-              title="Global Wheelz Location"
+              title="Global wheels Location"
             />
             
             {/* Overlay with Company Info */}
             <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-red-200 max-w-xs">
               <div className="flex items-center space-x-3 mb-3">
                 <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                <h3 className="font-bold text-red-600">Global Wheelz</h3>
+                <h3 className="font-bold text-red-600">Global wheels</h3>
               </div>
               <p className="text-sm text-gray-600 mb-2">
                 <strong>Operation Office:</strong><br />
