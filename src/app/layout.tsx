@@ -2,36 +2,36 @@ import type { Metadata } from 'next'
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: 'Global-Wheelz - Smart Solutions for Smarter Enterprises',
+  title: 'global-Wheels - Smart Solutions for Smarter Enterprises',
   description: 'A unique and powerful software suite to transform the way you work. Designed for businesses of all sizes, built by a company that values your privacy.',
   keywords: 'HR software, payroll, performance management, time attendance, hiring, onboarding, business solutions',
-  authors: [{ name: 'Global-Wheelz' }],
-  creator: 'Global-Wheelz',
-  publisher: 'Global-Wheelz',
+  authors: [{ name: 'global-Wheels' }],
+  creator: 'global-Wheels',
+  publisher: 'global-Wheels',
   robots: 'index, follow',
-  metadataBase: new URL('https://Global-Wheelz.com'),
+  metadataBase: new URL('https://global-Wheels.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Global-Wheelz - Smart Solutions for Smarter Enterprises',
+    title: 'global-Wheels - Smart Solutions for Smarter Enterprises',
     description: 'A unique and powerful software suite to transform the way you work. Designed for businesses of all sizes, built by a company that values your privacy.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://Global-Wheelz.com',
-    siteName: 'Global-Wheelz',
+    url: 'https://global-Wheels.com',
+    siteName: 'global-Wheels',
     images: [
       {
         url: '/Logo.png',
         width: 1200,
         height: 630,
-        alt: 'Global-Wheelz Logo',
+        alt: 'global-Wheels Logo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Global-Wheelz - Smart Solutions for Smarter Enterprises',
+    title: 'global-Wheels - Smart Solutions for Smarter Enterprises',
     description: 'A unique and powerful software suite to transform the way you work. Designed for businesses of all sizes, built by a company that values your privacy.',
     images: ['/Logo.png'],
   },

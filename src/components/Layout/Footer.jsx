@@ -96,7 +96,7 @@ const Footer = () => {
                 <img src="/Facebook.png" alt="Facebook" />
               </Link>
               <Link
-                href="https://www.linkedin.com/company/Global-Wheelz"
+                href="https://www.linkedin.com/company/global-Wheels"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors"

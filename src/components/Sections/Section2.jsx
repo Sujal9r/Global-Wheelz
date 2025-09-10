@@ -18,7 +18,7 @@ const Section2 = () => {
                 International Logistics
               </p>
               <h1 className="text-3xl sm:text-4xl lg:text-6xl xl:text-7xl leading-tight text-red-600">
-                Global Wheelz
+                Global Wheels
               </h1>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 font-medium">
                 Your Gateway to Global Markets
@@ -37,7 +37,7 @@ const Section2 = () => {
           <div className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-64 bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-30"></div>
           
           <div className="text-gray-800 space-y-6 lg:space-y-8 order-1 lg:order-2">
-            <img src="/Cot.png" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 border-2 border-red-300 rounded-full flex items-center justify-center"/>            
+            <img src="https://wallpapers.com/images/featured/tyres-png-q9h2c4y9nd0gy6e4.jpg" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 border-red-300 rounded-full flex items-center justify-center animate-spin"/>            
             
             <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-light leading-relaxed text-gray-700">
               "Whether you're a startup, mid-sized company, or enterprise —Global Wheelz delivers excellence for all."
