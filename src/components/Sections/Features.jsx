@@ -119,7 +119,7 @@ const Features = () => {
 
             <div className="w-full flex-shrink-0 flex justify-center">
               <img
-                src="https://www.exportiamo.it/public/files//international-transport-1.jpg"
+                src="Dtod.png"
                 alt=""
               />
             </div>

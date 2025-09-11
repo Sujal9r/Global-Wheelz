@@ -1,3 +1,4 @@
+"use client";
 import Navbar from '../../components/Layout/Navbar';
 import Footer from '../../components/Layout/Footer';
 
@@ -77,7 +78,10 @@ export default function Services() {
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Get a personalized quote for your shipping needs and experience the Global wheels difference.
           </p>
-          <button className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-red-500/30">
+          <button 
+            onClick={() => window.location.href = '/contact'}
+            className="bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-red-500/30"
+          >
             Get Quote Now
           </button>
         </div>

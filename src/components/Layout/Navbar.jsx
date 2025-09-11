@@ -87,12 +87,16 @@ const Navbar = () => {
       <div className="relative w-full px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex items-center justify-between h-full">
             {/* Logo */}
-            <img
-              src="/Logo.png"
-              alt="Logo"
-              href="/"
-              className="h-12 md:h-15 lg:h-18 w-auto object-contain"
-            />
+            <button
+              onClick={() => handleNavigation("/")}
+              className="focus:outline-none"
+            >
+              <img
+                src="/Logo.png"
+                alt="Logo"
+                className="h-12 md:h-15 lg:h-18 w-auto object-contain hover:opacity-80 transition-opacity duration-300"
+              />
+            </button>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
@@ -193,6 +197,7 @@ const Navbar = () => {
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
               <button
+                onClick={() => handleNavigation("/contact")}
                 className="relative overflow-hidden group bg-gradient-to-r from-red-500 to-red-600 
                                  text-white px-6 py-2.5 rounded-full font-medium text-sm 
                                  hover:from-red-600 hover:to-red-700 transform hover:scale-105 
@@ -312,7 +317,10 @@ const Navbar = () => {
             </div>
             ))}
             <div className="pt-4">
-              <button className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300">
+              <button 
+                onClick={() => handleNavigation("/contact")}
+                className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-full font-medium hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-300"
+              >
                 Get Quote
                 </button>
               </div>

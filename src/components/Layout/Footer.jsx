@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -25,9 +26,7 @@ const Footer = () => {
               <li><Link href="/" className="text-gray-600 hover:text-red-600 transition-colors">Home</Link></li>
               <li><Link href="/about" className="text-gray-600 hover:text-red-600 transition-colors">About Us</Link></li>
               <li><Link href="/services" className="text-gray-600 hover:text-red-600 transition-colors">Our Services</Link></li>
-              <li><Link href="/tracking" className="text-gray-600 hover:text-red-600 transition-colors">Track Shipment</Link></li>
               <li><Link href="/contact" className="text-gray-600 hover:text-red-600 transition-colors">Contact Us</Link></li>
-              <li><Link href="/careers" className="text-gray-600 hover:text-red-600 transition-colors">Careers</Link></li>
             </ul>
           </div>
 
@@ -36,12 +35,11 @@ const Footer = () => {
               Logistics Services
             </h3>
             <ul className="space-y-3">
-              <li><Link href="/services/freight-forwarding" className="text-gray-600 hover:text-red-600 transition-colors">Freight Forwarding</Link></li>
-              <li><Link href="/services/warehousing" className="text-gray-600 hover:text-red-600 transition-colors">Warehousing Solutions</Link></li>
-              <li><Link href="/services/supply-chain" className="text-gray-600 hover:text-red-600 transition-colors">Supply Chain Management</Link></li>
+              <li><Link href="/services/air-freight" className="text-gray-600 hover:text-red-600 transition-colors">Air Freight</Link></li>
+              <li><Link href="/services/sea-freight" className="text-gray-600 hover:text-red-600 transition-colors">Sea Freight</Link></li>
               <li><Link href="/services/custom-clearance" className="text-gray-600 hover:text-red-600 transition-colors">Custom Clearance</Link></li>
-              <li><Link href="/services/last-mile" className="text-gray-600 hover:text-red-600 transition-colors">Last-Mile Delivery</Link></li>
-              <li><Link href="/services/international-shipping" className="text-gray-600 hover:text-red-600 transition-colors">International Shipping</Link></li>
+              <li><Link href="/services/door-to-door" className="text-gray-600 hover:text-red-600 transition-colors">Door to Door Services</Link></li>
+              <li><Link href="/services/international-transportation" className="text-gray-600 hover:text-red-600 transition-colors">International Transportation</Link></li>
             </ul>
           </div>
 
@@ -50,12 +48,12 @@ const Footer = () => {
               Industries We Serve
             </h3>
             <ul className="space-y-3">
-              <li><Link href="/industries/e-commerce" className="text-gray-600 hover:text-red-600 transition-colors">E-commerce</Link></li>
-              <li><Link href="/industries/retail" className="text-gray-600 hover:text-red-600 transition-colors">Retail</Link></li>
-              <li><Link href="/industries/manufacturing" className="text-gray-600 hover:text-red-600 transition-colors">Manufacturing</Link></li>
-              <li><Link href="/industries/automotive" className="text-gray-600 hover:text-red-600 transition-colors">Automotive</Link></li>
-              <li><Link href="/industries/healthcare" className="text-gray-600 hover:text-red-600 transition-colors">Healthcare</Link></li>
-              <li><Link href="/industries/technology" className="text-gray-600 hover:text-red-600 transition-colors">Technology</Link></li>
+              <li><span className="text-gray-600">E-commerce</span></li>
+              <li><span className="text-gray-600">Retail</span></li>
+              <li><span className="text-gray-600">Manufacturing</span></li>
+              <li><span className="text-gray-600">Automotive</span></li>
+              <li><span className="text-gray-600">Healthcare</span></li>
+              <li><span className="text-gray-600">Technology</span></li>
             </ul>
           </div>
 
@@ -78,40 +76,43 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6 bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent">
               Connect With Us
             </h3>
-            <div className="flex space-x-4">
-              <Link
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors"
-              >
-                <img src="/Twiter.png" alt="Twitter" />
-              </Link>
-              <Link
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors"
-              >
-                <img src="/Facebook.png" alt="Facebook" />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/company/global-Wheels"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors"
-              >
-                <img src="/Linkedin.png" alt="LinkedIn" />
-              </Link>
-              <Link
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors"
-              >
-                <img src="/Instagram.png" alt="Instagram" />
-              </Link>
-            </div>
+           <div className="flex space-x-4">
+      <Link
+        href="https://twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors text-gray-600 hover:text-red-600"
+      >
+        <FaTwitter className="text-xl" />
+      </Link>
+
+      <Link
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors text-gray-600 hover:text-red-600"
+      >
+        <FaFacebookF className="text-xl" />
+      </Link>
+
+      <Link
+        href="https://www.linkedin.com/company/global-Wheels"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors text-gray-600 hover:text-red-600"
+      >
+        <FaLinkedinIn className="text-xl" />
+      </Link>
+
+      <Link
+        href="https://instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-red-100 transition-colors text-gray-600 hover:text-red-600"
+      >
+        <FaInstagram className="text-xl" />
+      </Link>
+    </div>
           </div>
 
           {/* Newsletter */}
@@ -128,8 +129,8 @@ const Footer = () => {
                 placeholder="Enter your email"
                 className="w-full pl-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 bg-white border border-red-300 focus:outline-none focus:border-red-500"
               />
-              <button className="absolute top-1/2 right-1 -translate-y-1/2 bg-red-600 hover:bg-red-700 p-3 rounded-md transition-colors">
-                <img src="/Arrow.png" alt="Submit" className="w-4 h-4" />
+              <button className="absolute top-1/2 right-1 -translate-y-1/2 bg-red-600 hover:bg-red-700 p-2 rounded-md transition-colors text-white">
+                <span className="text-sm">→</span>
               </button>
             </div>
           </div>

@@ -37,8 +37,8 @@ const Section2 = () => {
           <div className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-64 bg-gradient-to-b from-transparent via-red-500 to-transparent opacity-30"></div>
           
           <div className="text-gray-800 space-y-6 lg:space-y-8 order-1 lg:order-2">
-            <img src="https://wallpapers.com/images/featured/tyres-png-q9h2c4y9nd0gy6e4.jpg" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 border-red-300 rounded-full flex items-center justify-center animate-spin"/>            
-            
+            <img src="https://png.pngtree.com/png-vector/20220610/ourmid/pngtree-vector-car-tire-and-alloy-wheel-isolated-on-white-background-png-image_4828830.png" className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 border-red-300 rounded-full flex items-center justify-center animate-spin"/>   
+
             <blockquote className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-light leading-relaxed text-gray-700">
               "Whether you're a startup, mid-sized company, or enterprise —Global Wheelz delivers logistics excellence for all."
             </blockquote>
