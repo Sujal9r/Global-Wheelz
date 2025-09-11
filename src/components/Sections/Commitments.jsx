@@ -132,9 +132,9 @@ const Commitments = () => {
             <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-8 md:mb-10 leading-relaxed max-w-lg">
               We are committed to providing seamless logistics solutions that connect your business to global markets with precision, reliability, and excellence.
             </p>
-            <Button 
-            label="Learn More"
-            />
+            <a href="/contact">
+              <Button className="cursor-pointer" label="Contact Us" />
+            </a>
           </div>
         </div>
 

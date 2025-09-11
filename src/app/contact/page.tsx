@@ -8,7 +8,7 @@ export default function Contact() {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="pt-0 pb-16 bg-gradient-to-br from-white via-red-50 to-white">
+      <div className="pt-30 pb-16 bg-gradient-to-br from-white via-red-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-black via-red-600 to-white bg-clip-text text-transparent mb-6">
@@ -38,7 +38,7 @@ export default function Contact() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-red-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
-                      placeholder="John"
+                      placeholder="Name"
                     />
                   </div>
                   <div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-red-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
-                      placeholder="Doe"
+                      placeholder="Surname"
                     />
                   </div>
                 </div>
@@ -55,7 +55,7 @@ export default function Contact() {
                   <input
                     type="email"
                     className="w-full px-4 py-3 border border-red-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
-                    placeholder="john@example.com"
+                    placeholder="Hello@example.com"
                   />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export default function Contact() {
                   <input
                     type="tel"
                     className="w-full px-4 py-3 border border-red-200 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="Enter your phone number"
                   />
                 </div>
                 <div>
